@@ -1,7 +1,7 @@
 from selenium import webdriver
 
-id = 'Your Id'
-password = 'Your Password'
+id = 'tasniakk'
+password = 'Balsal12'
 
 browser = webdriver.Chrome()
 browser.get('http://github.com')
@@ -20,3 +20,5 @@ password_box.send_keys(password)
 password_box.submit()
 
 browser.get('https://github.com/MrNewaz')
+
+assert 'Saif Newaz' in browser.page_source
